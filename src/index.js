@@ -1,7 +1,7 @@
 let currentSong = 1;
 let songsList = [];
 
-const title = document.querySelector("h1");
+const title = document.querySelector("h2");
 const musicInput = document.querySelector("input");
 const labelInput = document.querySelector("label");
 const player = document.querySelector("audio");
@@ -12,6 +12,7 @@ const nextBtn = document.querySelector("#next");
 
 function addSongs(event) {
   songsList = event.target.files;
+  labelInput.style.display = "none";
   playSong();
 }
 
@@ -21,7 +22,7 @@ function playSong() {
   const musicURL = URL.createObjectURL(songsList[currentSong - 1]);
   player.setAttribute("src", musicURL);
   player.play();
-  playBtn.innerText = "︎⏸︎";
+  playBtn.innerText = "︎ ⏸︎";
   playBtn.onclick = pauseSong;
 }
 
@@ -62,7 +63,15 @@ function previousSong() {
   playSong();
 }
 
+const reloadBtn = document.querySelector('#reload');
+
+function reloadPage(){
+  return window.location.reload();
+}
+
 musicInput.onchange = addSongs;
 stopBtn.onclick = stopSong;
 nextBtn.onclick = nextSong;
 prevBtn.onclick = previousSong;
+
+reloadBtn.onclick = reloadPage;

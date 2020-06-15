@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>I heart music!</title>
     <meta charset="UTF-8" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
@@ -11,18 +11,23 @@
   </head>
 
   <body>
-    <h1>No song selected!</h1>
-    <label class="custom-file-upload">
-      <input type="file" name="songs" multiple />
-      Click here to add your songs! 🎶
-    </label>
-    <audio></audio>
-    <div>
-      <button id="prev">⏪︎</button>
-      <button id="play">▶</button>
-      <button id="stop">⏹</button>
-      <button id="next">⏩︎</button>
+    <div class="player">
+        <h1>I Heart Music!</h1>
+        <h2>No song selected!</h2>
+        <label class="custom-file-upload">
+        <input type="file" name="songs" multiple />
+        Click here to add your songs! 🎶
+      </label>
+      <audio></audio>
+      <div class="buttons">
+        <button id="prev">⏪︎</button>
+        <button id="play">⏵</button>
+        <button id="stop">⏹</button>
+        <button id="next">⏩︎</button>
+      </div>
+      <button id="reload">Create new playlist!</button>
     </div>
+    
     <script src="src/index.js"></script>
   </body>
 </html>
