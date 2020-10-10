@@ -2,7 +2,7 @@
 
 Resultado do webinar da IronHack 'Crie um player de música com JavaScript'
 
-<img src="https://ik.imagekit.io/7qexdaoimo/recorder_5vwDFPUoq.gif" width="400px"> 
+<img src="https://ik.imagekit.io/7qexdaoimo/tela_zTOWwbCNe.jpg" width="400px"> 
 
 #### Tecnologias:
 - HTML
